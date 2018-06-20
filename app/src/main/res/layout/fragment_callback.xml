@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/toast_callback_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="16dp"
+        android:text="Run toast method from activity"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/change_textview_callback_button"
+        app:layout_constraintEnd_toEndOf="@+id/change_textview_callback_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/change_textview_callback_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/change_textview_callback_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:text="change activity textview"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/change_backround_callback_button"
+        app:layout_constraintEnd_toEndOf="@+id/change_backround_callback_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/change_backround_callback_button"
+        app:layout_constraintTop_toBottomOf="@+id/toast_callback_button" />
+
+    <Button
+        android:id="@+id/change_backround_callback_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:text="change activity backround color"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/remove_fragment_callback_button"
+        app:layout_constraintEnd_toEndOf="@+id/remove_fragment_callback_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/remove_fragment_callback_button"
+        app:layout_constraintTop_toBottomOf="@+id/change_textview_callback_button" />
+
+    <Button
+        android:id="@+id/remove_fragment_callback_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:text="remove fragment from activity"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_backround_callback_button" />
+</android.support.constraint.ConstraintLayout>
